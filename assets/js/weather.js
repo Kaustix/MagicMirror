@@ -16,7 +16,6 @@
 function setWeather(res) {
     setClass('weather-icon', getWeatherIcon(res.weather[0].id));
     setClass('wind-icon', "wi wi-wind towards-" + Math.ceil(res.wind.deg) + "-deg");
-
     setHtml('weather-temp', Math.ceil(res.main.temp).toString());
     setHtml('weather-description', res.name + ", " + res.weather[0].description);
     setHtml('wind-speed', Math.ceil(res.wind.speed) + " km/h");
