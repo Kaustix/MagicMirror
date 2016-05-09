@@ -19,20 +19,20 @@ html, body {
 #clock-widget {
     font-size: 450%;
     display: block;
-    float: right;
-}
-
-#time {
-    float: right;
 }
 
 /** Weather **/
 #weather-widget {
     font-size: 450%;
+    text-transform: capitalize;
+}
+
+#weather-icon {
+    font-size: 130%;
 }
 
 #weather-info {
     font-size: 50%;
     display: block;
-    text-transform: capitalize;
+    padding-top: 2%;
 }

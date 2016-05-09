@@ -54,5 +54,9 @@ Add the following lines:
 @unclutter
 ```
 
+6) Update TimeZone (optional if your time was not set correctly, like mine was)
+
+run `dpkg-reconfigure tzdata`
+
 
 
