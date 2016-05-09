@@ -16,13 +16,19 @@ Raspberry Pi Magic Mirror Code + Setup
 3. Download KWeb (Kiosk Browser)
 
   1. Download/Install
+
 `wget http://steinerdatenbank.de/software/kweb-1.7.1.tar.gz
+
 tar -xzf kweb-1.7.1.tar.gz
+
 cd kweb-1.7.1
+
 ./debinstall`
 
   2. Configure
+
 Enable Shortcuts by using the shortcut ALT+a
+
 Go to 'Configuration' and Enable the following settings:
 
 - Enable Javascript
@@ -31,12 +37,18 @@ Go to 'Configuration' and Enable the following settings:
 - Set URL For Start page to the MagicMirror .html path:  file://home/pi/pi/MagicMirror/index.html
 
 4. Downaload Unclutter (Hides your mouse pointer when inactive)
+
 `sudo apt-get install unclutter`
 
 4. Launch KWeb and Unclutter on startup
+
 Edit the file: /etc/xdg/lxsession/LXDE/autostart
+
 Add these 2 lines
+
 `@kweb
+
 @unclutter`
+
 
 
