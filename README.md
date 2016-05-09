@@ -17,13 +17,12 @@ Raspberry Pi Magic Mirror Code + Setup
 
   1. Download/Install
 
-`wget http://steinerdatenbank.de/software/kweb-1.7.1.tar.gz
-
+```
+wget http://steinerdatenbank.de/software/kweb-1.7.1.tar.gz
 tar -xzf kweb-1.7.1.tar.gz
-
 cd kweb-1.7.1
-
-./debinstall`
+./debinstall
+```
 
   2. Configure
 
@@ -46,9 +45,10 @@ Edit the file: /etc/xdg/lxsession/LXDE/autostart
 
 Add these 2 lines
 
-`@kweb
-
-@unclutter`
+```
+@kweb
+@unclutter
+```
 
 
 
