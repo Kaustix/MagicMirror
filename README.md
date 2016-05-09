@@ -24,7 +24,8 @@ cd kweb-1.7.1
 ./debinstall
 ```
 
-Once installed, we need to configure kweb to launch in kiosk mode,
+Once installed, we need to configure kweb to launch in kiosk mode
+
 Go to 'Configuration' and Enable the following settings:
 
 - Enable Javascript
@@ -36,7 +37,7 @@ Go to 'Configuration' and Enable the following settings:
 
 `sudo apt-get install unclutter`
 
-4. Launch KWeb and Unclutter on startup
+5. Launch KWeb and Unclutter on startup
 
 Edit the file: /etc/xdg/lxsession/LXDE/autostart
 
