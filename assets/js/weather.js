@@ -14,13 +14,22 @@
 })();
 
 function setWeather(res) {
-    var iconName = getWeatherIcon(res.weather[0].id);
-    var temperature = Math.ceil(res.main.temp).toString();
+    setClass('weather-icon', getWeatherIcon(res.weather[0].id));
+    setClass('wind-icon', "wi wi-wind towards-" + Math.ceil(res.wind.deg) + "-deg");
 
-    document.getElementById('weather-icon').className = iconName;
-    document.getElementById('weather-temp').innerHTML = temperature + "&deg;C";
+    setHtml('weather-temp', Math.ceil(res.main.temp).toString());
+    setHtml('weather-description', res.name + ", " + res.weather[0].description);
+    setHtml('wind-speed', Math.ceil(res.wind.speed) + " km/h");
+    setHtml('temp-hi', Math.ceil(res.main.temp_max));
+    setHtml('temp-low', Math.ceil(res.main.temp_min));
+}
 
-    //TODO: Hook up the city/wind/high/lo temps
+function setHtml(id, content) {
+    document.getElementById(id).innerHTML = content;
+}
+
+function setClass(id, className) {
+    document.getElementById(id).className = className;
 }
 
 function getWeatherIcon(id) {
@@ -45,11 +54,11 @@ function getWeatherIcon(id) {
 function httpGetAsync(url, callback) {
     //callback(weatherData);
 
-     var xmlHttp = new XMLHttpRequest();
-     xmlHttp.onreadystatechange = function () {
-     if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
-     callback(JSON.parse(xmlHttp.responseText));
-     };
-     xmlHttp.open("GET", url, true);
-     xmlHttp.send();
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.onreadystatechange = function () {
+    if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+    callback(JSON.parse(xmlHttp.responseText));
+    };
+    xmlHttp.open("GET", url, true);
+    xmlHttp.send();
 }

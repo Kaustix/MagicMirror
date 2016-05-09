@@ -16,8 +16,8 @@ var weatherData = {
         "temp": 20.839,
         "pressure": 871.33,
         "humidity": 88,
-        "temp_min": 279.839,
-        "temp_max": 279.839,
+        "temp_min": 3.839,
+        "temp_max": 40.839,
         "sea_level": 1032.57,
         "grnd_level": 871.33
     },
