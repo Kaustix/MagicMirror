@@ -60,9 +60,9 @@ run `dpkg-reconfigure tzdata`
 
 
 ## Final Product Images
-![alt tag](https://db.tt/GNZviimz)
-![alt tag](https://db.tt/Mzq7tnVC)
-![alt tag](https://db.tt/6SMee49e)
-![alt tag](https://db.tt/VPRkWEVw)
+![alt tag](https://db.tt/8ey3ujAl)
+![alt tag](https://db.tt/ZiwBn060)
+![alt tag](https://db.tt/2om2OQxS)
+![alt tag](https://db.tt/cs3ljnNC)
 
 
